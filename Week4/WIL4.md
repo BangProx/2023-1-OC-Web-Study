@@ -1,4 +1,6 @@
 # 4주차 HTML
+노션 본문 링크 : https://dramatic-elbow-87e.notion.site/4-HTML-4bf7889766264aa786142b3c08fd4f3f
+노션 실습 링크2 : https://dramatic-elbow-87e.notion.site/4-bc504332ed2d4a509c4dcdcd62c0b925
 
 # 1. HTML(Hyper Text Markup Language)
 
@@ -92,27 +94,27 @@ css 와 html은 자료가 너무 많아서 쓸때마다 그때그때 찾아서 �
 `\<h1\>`이 가장 높은 레벨로 크기가 가장 크며 `\<h6\>`이 가장 낮은 레벨로 크기가 가장 작다.
 
 ```html
-\<h1\>This is heading 1\</h1\>
-\<h2\>This is heading 2\</h2\>
-\<h3\>This is heading 3\</h3\>
-\<h4\>This is heading 4\</h4\>
-\<h5\>This is heading 5\</h5\>
-\<h6\>This is heading 6\</h6\>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
 ```
 
 ### C. 문단 태그
 
-`\<p\>`태그는 `paragraph`로 문단을 구분하기 위해 사용한다. HTML에서는 연속된 공백이나 줄 바꿈은 하나의 공백으로 처리하기 때문에 문단 구분 시 `\<p\>`태그를, 줄 바꿈시 `\<br\>`태그를 이용한다.
+`<p>`태그는 `paragraph`로 문단을 구분하기 위해 사용한다. HTML에서는 연속된 공백이나 줄 바꿈은 하나의 공백으로 처리하기 때문에 문단 구분 시 `<p>`태그를, 줄 바꿈시 `<br>`태그를 이용한다.
 
 ```html
-\<p\>This is a paragraph.\</p\>
+<p>This is a paragraph.</p>
 ```
 
-`\<br\>`태그는 닫는 태그가 없습니다. xml 규격으로 html을 표현하는 xhtml 시스템에서는 `\</br\>`과 같이 xml 규격에 따라 사용 할 수 있다. 
-문단 구분을 위해 `\<br\>` 태그를 연속으로 사용하는 것 보다 `\<p\>`태그를 사용하는 것이 좋다.
+`<br>`태그는 닫는 태그가 없습니다. xml 규격으로 html을 표현하는 xhtml 시스템에서는 `<br>`과 같이 xml 규격에 따라 사용 할 수 있다. 
+문단 구분을 위해 `<br>` 태그를 연속으로 사용하는 것 보다 `<p>`태그를 사용하는 것이 좋다.
 
 ```html
-\<p\> To break lines \<br\> in a text, \<br\> use the br element. \</p\> 
+<p> To break lines <br> in a text, <br> use the br element. </p> 
 ```
 
 HTML 소스 에서는 기본적으로 하나의 공백만 인식이 되고 줄바꿈의 경우에도 별도의 태그를 사용하지 않으면 한줄로 보이게 된다. 따라서, 여러 개의 공백을 넣으려면 `&npsp;`를 사용해야 한다.
@@ -124,10 +126,10 @@ Hello **&nbsp;** **&nbsp;** **&nbsp;** World   -\> Hello     World
 소스에 작성한 그대로를 화면에 출력하려면 `pre` 태그를 활용하면 된다.
 
 ```html
-\<pre\>
+<pre>
 Hello
   World           !!!
-\</pre\>
+</pre>
 ```
 
 ### D. 형식태그
@@ -158,11 +160,11 @@ Hello
 - `\<ul\>` Unordered List로 순서없이 모양으로 목록을 만든다.
 
 ```html
-\<ul\>
-  \<li\>Listenelement 1\</li\>
-  \<li\>Listenelement 2\</li\>
-  \<li\>Listenelement 3\</li\>
-\</ul\>
+<ul>
+  <li>Listenelement 1\<li>
+  <li>Listenelement 2\<li>
+  <li>Listenelement 3\<li>
+\<ul>
 ```
 
 **결과**
@@ -172,11 +174,11 @@ Hello
 - Listenelement 3
 
 ```html
-\<ol\>
-  \<li\>Listenelement 1\</li\>
-  \<li\>Listenelement 2\</li\>
-  \<li\>Listenelement 3\</li\>
-\</ol\>
+<ol>
+  <li>Listenelement 1</li>
+  <li>Listenelement 2</li>
+  <li>Listenelement 3</li>
+</ol>
 ```
 
 **결과**
@@ -187,12 +189,12 @@ Hello
 
 ### E. 하이퍼 링크
 
-하이퍼링크는 웹의 대표적인 특징으로 `\<a\>`(Anchor)태그를 사용해 만들수 있다. `href`속성을 사용해 이동할 콘텐츠의 주소를 기술하면 된다. 이동할 콘텐츠는 html 파일이나 이미지 혹은 .hwp, .pdf 등 모든 파일이 될 수 있으며 URL을 이용해 서버의 콘텐츠를 지정하거나 프로그램을 호출하는 것도 가능하다.
+하이퍼링크는 웹의 대표적인 특징으로 `<a>`(Anchor)태그를 사용해 만들수 있다. `href`속성을 사용해 이동할 콘텐츠의 주소를 기술하면 된다. 이동할 콘텐츠는 html 파일이나 이미지 혹은 .hwp, .pdf 등 모든 파일이 될 수 있으며 URL을 이용해 서버의 콘텐츠를 지정하거나 프로그램을 호출하는 것도 가능하다.
 
 다른 서버 컨텐츠로 이동하는 것이라면 href 에 `http://` 로 시작하는 URL이 들어가야 합니다.
 
 ```html
-\<a href="이동할 콘텐츠" title="말풍선 도움말" target="브라우저 윈도우 옵션"\>링크 텍스트\</a\>
+<a href="이동할 콘텐츠" title="말풍선 도움말" target="브라우저 윈도우 옵션">링크 텍스트</a>
 ```
 
 `href` 에 들어가는 이동할 콘텐츠의 위치는 상대경로와 절대경로로 표현할 수 있다. 내 컴퓨터가 아니라 html 을 서비스하고 있는 웹서버 컴퓨터에서 콘텐츠간의 위치 이므로 개념을 잘 이해해야 한다.
@@ -215,15 +217,15 @@ Hello
 
 **책갈피 구현**
 
-- `\<a\>`태그를 이용해 같은 문서 내에서 특정 위치로 이동하는 책갈피 기능을 구현할 수 있음.
-- `\<p\>`태그의 `name`속성이나 `id`속성을 이용해 문서 내 이동위치를 지정하고 하이퍼링크에 `href=#name(id)` 과 같이 이동할 위치를 지정함.
+- `<a>`태그를 이용해 같은 문서 내에서 특정 위치로 이동하는 책갈피 기능을 구현할 수 있음.
+- `<p>`태그의 `name`속성이나 `id`속성을 이용해 문서 내 이동위치를 지정하고 하이퍼링크에 `href=#name(id)` 과 같이 이동할 위치를 지정함.
 
 ```html
 메뉴 
-\<a href="#m1"\>5.HTML이란 무엇인가?\</a\>
+<a href="#m1"\>5.HTML이란 무엇인가?</a>
 ......
-\<p id="m1"\>\</p\>
-\<h3\>5.HTML이란 무엇인가?\</h3\>
+<p id="m1"></p>
+<h3>5.HTML이란 무엇인가?</h3>
 ```
 
 **이미지 링크**
