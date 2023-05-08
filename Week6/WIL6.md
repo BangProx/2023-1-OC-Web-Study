@@ -8,7 +8,7 @@
 
 박스 모양으로 그 안에 요소들이 들어간다. 박스의 테두리를 border라고 한다. 
 
-![Untitled](6%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20CSS%202%201569a18adc314d72ad6a7fe607333980/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/122248815/236780796-2a5e8cf7-c887-49cc-a94b-234d1b5d9f2c.png)
 
 ## 1) 블록 레벨 요소
 
